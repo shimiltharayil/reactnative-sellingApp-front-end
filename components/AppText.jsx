@@ -5,4 +5,5 @@ const AppText = ({ children, style }) => {
       <Text style={[defaultStyles.text, style]}>{children}</Text>
   );
 };
+export default AppText;
 

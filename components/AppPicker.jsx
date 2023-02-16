@@ -16,11 +16,12 @@ const AppPicker = ({ icon, placeholder }) => {
           style={styles.icon}
         />
       )}
-      <AppText>{placeholder}</AppText>
+      <AppText style={styles.text}>{placeholder}</AppText>
       <MaterialCommunityIcons
         name="chevron-down"
         size={20}
         color={defaultStyles.colors.medium}
+        style={styles.icon}
       />
     </View>
   );
@@ -38,4 +39,7 @@ const styles = StyleSheet.create({
   icon: {
     marginRight: 10,
   },
+  text:{
+    flex:1,
+  }
 });
