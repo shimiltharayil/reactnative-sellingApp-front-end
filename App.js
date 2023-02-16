@@ -1,11 +1,6 @@
-import { SafeAreaView, Dimensions, View, StyleSheet } from "react-native";
-import AccountScreen from "./app/screens/AccountScreen";
-import ListingDetailsScreen from "./app/screens/ListingDetailsScreen";
-import MessageScreen from "./app/screens/MessageScreen";
-import ViewImageScreen from "./app/screens/ViewImageScreen";
-import Icon from "./components/Icon";
-import ListItem from "./components/ListItem";
+import AppTextInput from "./components/AppTextInput";
 import Screen from "./components/Screen";
+import AppPicker from './components/AppPicker';
 
 export default function App() {
   return (
@@ -26,6 +21,11 @@ export default function App() {
     //     }
     //   />
     // </Screen>
-    <AccountScreen />
+    // <AccountScreen />
+    // <ListingScreen />
+    <Screen>
+      <AppPicker placeholder="Category" icon="apps" />
+      <AppTextInput placeholder="Email" icon="email" />
+    </Screen>
   );
 }

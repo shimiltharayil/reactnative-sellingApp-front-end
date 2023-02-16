@@ -35,10 +35,13 @@ const AccountScreen = () => {
           data={menuItems}
           keyExtractor={(menuItem) => menuItem.title}
           ItemSeparatorComponent={ListItemSeparator}
-          renderItem={({ item }) => <ListItem title={item.title} ImageComponent={<Icon size={30} iconColor={colors.white} name={item.icon.name} backgroundColor={item.icon.backgroundColor} /> } /> }
+          renderItem={({ item }) => <ListItem title={item.title} IconComponent={<Icon size={30} iconColor={colors.white} name={item.icon.name} backgroundColor={item.icon.backgroundColor} /> } /> }
 
         />
       </View>
+      <ListItem title="Log Out" IconComponent={
+        <Icon name="logout"  backgroundColor="#ffe66d" size={30} iconColor={colors.white}/>
+      }  />
     </Screen>
   );
 };
